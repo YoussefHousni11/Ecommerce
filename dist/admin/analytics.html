@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Dashboard</title>
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- icon likns  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+
+
+    <style>
+        body {
+            font-family: 'Hanken Grotesk', sans-serif;
+        }
+    </style>
+</head>
+
+
+<body class=" bg-gray-100 font-Hanken">
+    <div class="flex">
+        <!-- Sidebar -->
+        <div class="bg-gray-900 text-white w-64 min-h-screen p-4">
+            <div class="flex items-center space-x-2 mb-8">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-purple-600 to-red-600"></div>
+                <h1 class="text-xl font-bold">Dashboard</h1>
+            </div>
+            <nav>
+                <a href="index.html" class="flex items-center py-4 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                    </svg>
+                    Overview
+                </a>
+                <a href="order.html" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                    Orders
+                </a>
+                <a href="product.html" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                    </svg>
+                    Products
+                </a>
+                <a href="customer.html" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    Customers
+                </a>
+                <a href="analytics.html" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                    Analytics
+                </a>
+                <a href="setting.html" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    Settings
+                </a>
+            </nav>
+        </div>
+        <!-- Main Content -->
+        <div class="flex-1 p-8 overflow-auto text-white">
+            <div class="max-w-7xl mx-auto">
+                <!-- Header -->
+                <div class="flex justify-between items-center mb-10">
+                    <h1 class="text-3xl font-bold">Analytics Overview</h1>
+                    <div class="flex gap-4">
+                        <select class="bg-gray-900 border border-gray-800 rounded-lg px-4 py-2">
+                            <option>Last 24 Hours</option>
+                            <option>Last 7 Days</option>
+                            <option>Last Month</option>
+                        </select>
+                        <button class="bg-indigo-500 hover:bg-indigo-600 px-6 py-2 rounded-lg transition-colors">
+                            Export
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 text-white">
+                    <div class="bg-gray-900 rounded-2xl p-6 border border-gray-800">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <p class="text-gray-400 text-sm">Revenue</p>
+                                <p class="text-3xl font-bold mt-1">$89,432</p>
+                            </div>
+                            <span class="px-2 py-1 bg-green-500/10 text-green-500 rounded-lg text-sm">+12.4%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+                            <div class="h-full w-2/3 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-2xl p-6 border border-gray-800">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <p class="text-gray-400 text-sm">Active Users</p>
+                                <p class="text-3xl font-bold mt-1">1,832</p>
+                            </div>
+                            <span class="px-2 py-1 bg-green-500/10 text-green-500 rounded-lg text-sm">+8.2%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+                            <div class="h-full w-3/4 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-2xl p-6 border border-gray-800">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <p class="text-gray-400 text-sm">Conversion</p>
+                                <p class="text-3xl font-bold mt-1">4.3%</p>
+                            </div>
+                            <span class="px-2 py-1 bg-red-500/10 text-red-500 rounded-lg text-sm">-2.1%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+                            <div class="h-full w-1/2 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-2xl p-6 border border-gray-800">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <p class="text-gray-400 text-sm">Orders</p>
+                                <p class="text-3xl font-bold mt-1">928</p>
+                            </div>
+                            <span class="px-2 py-1 bg-green-500/10 text-green-500 rounded-lg text-sm">+5.4%</span>
+                        </div>
+                        <div class="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+                            <div class="h-full w-4/5 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Analytics Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                    <!-- Traffic Sources -->
+                    <div class="bg-gray-900 rounded-2xl p-6 border border-gray-800 text-white">
+                        <h2 class="text-xl font-bold mb-6">Traffic Sources</h2>
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-400">Direct</span>
+                                    <span class="font-medium">45%</span>
+                                </div>
+                                <div class="h-3 bg-gray-800 rounded-full overflow-hidden">
+                                    <div
+                                        class="h-full w-[45%] bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-400">Social Media</span>
+                                    <span class="font-medium">32%</span>
+                                </div>
+                                <div class="h-3 bg-gray-800 rounded-full overflow-hidden">
+                                    <div class="h-full w-[32%] bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-400">Referral</span>
+                                    <span class="font-medium">23%</span>
+                                </div>
+                                <div class="h-3 bg-gray-800 rounded-full overflow-hidden">
+                                    <div
+                                        class="h-full w-[23%] bg-gradient-to-r from-green-500 to-emerald-500 rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top Products -->
+                    <div class="bg-gray-900 rounded-2xl p-6 border border-gray-800 text-white">
+                        <h2 class="text-xl font-bold mb-6">Top Products</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between p-4 bg-gray-800/50 rounded-xl">
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center font-bold">
+                                        #1
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">Product Name</p>
+                                        <p class="text-sm text-gray-400">2,845 sales</p>
+                                    </div>
+                                </div>
+                                <span class="text-green-500">+12.5%</span>
+                            </div>
+                            <div class="flex items-center justify-between p-4 bg-gray-800/50 rounded-xl">
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center font-bold">
+                                        #2
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">Product Name</p>
+                                        <p class="text-sm text-gray-400">1,928 sales</p>
+                                    </div>
+                                </div>
+                                <span class="text-green-500">+8.3%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="bg-gray-900 rounded-2xl p-6 border border-gray-800 text-white">
+                        <h2 class="text-xl font-bold mb-6">Recent Activity</h2>
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <div
+                                    class="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center text-indigo-500">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-medium">New Order #12345</p>
+                                    <p class="text-sm text-gray-400">2 minutes ago</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div
+                                    class="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center text-green-500">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-medium">New User Registration</p>
+                                    <p class="text-sm text-gray-400">15 minutes ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performance -->
+                    <div class="bg-gray-900 rounded-2xl p-6 border border-gray-800 text-white">
+                        <h2 class="text-xl font-bold mb-6">Performance</h2>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gray-800/50 rounded-xl p-4">
+                                <p class="text-gray-400 mb-2">Avg. Session</p>
+                                <p class="text-2xl font-bold">4m 32s</p>
+                                <div class="mt-4 h-2 bg-gray-800 rounded-full overflow-hidden">
+                                    <div
+                                        class="h-full w-3/4 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-gray-800/50 rounded-xl p-4">
+                                <p class="text-gray-400 mb-2">Bounce Rate</p>
+                                <p class="text-2xl font-bold">32.4%</p>
+                                <div class="mt-4 h-2 bg-gray-800 rounded-full overflow-hidden">
+                                    <div class="h-full w-1/3 bg-gradient-to-r from-orange-500 to-red-500 rounded-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

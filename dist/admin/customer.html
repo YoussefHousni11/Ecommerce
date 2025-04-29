@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers Management</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+    <style>
+        body {
+            font-family: 'Hanken Grotesk', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-Hanken">
+    <div class="flex">
+        <!-- Sidebar -->
+        <div class="bg-gray-900 text-white w-64 min-h-screen p-4">
+            <div class="flex items-center space-x-2 mb-8">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-purple-600 to-red-600"></div>
+                <h1 class="text-xl font-bold">Dashboard</h1>
+            </div>
+            <nav>
+                <a href="index.html" class="flex items-center py-4 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                    </svg>
+                    Overview
+                </a>
+                <a href="order.html" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                    Orders
+                </a>
+                <a href="product.html" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                    </svg>
+                    Products
+                </a>
+                <a href="customer.html" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    Customers
+                </a>
+                <a href="analytics.html" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                    Analytics
+                </a>
+                <a href="setting.html" class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    Settings
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-8">
+            <!-- Header -->
+            <div class="flex justify-between items-center mb-8">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800">Customer Hub</h2>
+                    <p class="text-gray-500">Manage your customers and their interactions</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <button
+                        class="bg-white px-4 py-2 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 4v16m8-8H4" />
+                        </svg>
+                        Add Customer
+                    </button>
+                    <button
+                        class="bg-purple-600 px-4 py-2 rounded-lg text-white shadow-sm hover:shadow-md transition-all duration-200 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                        Export Customers
+                    </button>
+                </div>
+            </div>
+
+            <!-- Customer Stats -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-8">
+                <!-- Total Customers -->
+                <div class="bg-gradient-to-br from-purple-500 to-indigo-600 p-6 rounded-lg shadow-lg text-white">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-purple-200">Total Customers</p>
+                            <h3 class="text-3xl font-bold mt-1">1,234</h3>
+                        </div>
+                        <span class="bg-white/20 p-2 rounded-lg">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="mt-4 flex items-center text-purple-200">
+                        <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                        <span>+8.5% this month</span>
+                    </div>
+                </div>
+
+                <!-- Active Customers -->
+                <div class="bg-gradient-to-br from-emerald-500 to-teal-600 p-6 rounded-lg shadow-lg text-white">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-emerald-200">Active Customers</p>
+                            <h3 class="text-3xl font-bold mt-1">987</h3>
+                        </div>
+                        <span class="bg-white/20 p-2 rounded-lg">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="mt-4 flex items-center text-emerald-200">
+                        <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                        <span>+12.3% this week</span>
+                    </div>
+                </div>
+
+                <!-- New Customers -->
+                <div class="bg-gradient-to-br from-amber-500 to-orange-600 p-6 rounded-lg shadow-lg text-white">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-amber-200">New Customers</p>
+                            <h3 class="text-3xl font-bold mt-1">123</h3>
+                        </div>
+                        <span class="bg-white/20 p-2 rounded-lg">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path
+                                    d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="mt-4 flex items-center text-amber-200">
+                        <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                        <span>+15.7% this week</span>
+                    </div>
+                </div>
+
+                <!-- Inactive Customers -->
+                <div class="bg-gradient-to-br from-rose-500 to-pink-600 p-6 rounded-lg shadow-lg text-white">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-rose-200">Inactive Customers</p>
+                            <h3 class="text-3xl font-bold mt-1">45</h3>
+                        </div>
+                        <span class="bg-white/20 p-2 rounded-lg">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="mt-4 flex items-center text-rose-200">
+                        <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                        <span>Needs attention</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customer Search and Filters -->
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+                <div class="flex flex-wrap gap-4">
+                    <div class="flex-1">
+                        <div class="relative">
+                            <input type="text" placeholder="Search customers by name, email, or phone..."
+                                class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <svg class="w-5 h-5 text-gray-400 absolute left-3 top-2.5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <select
+                        class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        <option>All Status</option>
+                        <option>Active</option>
+                        <option>Inactive</option>
+                    </select>
+                    <select
+                        class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        <option>Sort By</option>
+                        <option>Newest</option>
+                        <option>Oldest</option>
+                        <option>Most Active</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Customer Table -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Customer List</h3>
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 4v16m8-8H4" />
+                        </svg>
+                        Add Customer
+                    </button>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead class="bg-gray-50 text-gray-600">
+                            <tr>
+                                <th class="px-6 py-3">Name</th>
+                                <th class="px-6 py-3">Email</th>
+                                <th class="px-6 py-3">Phone</th>
+                                <th class="px-6 py-3">Orders</th>
+                                <th class="px-6 py-3">Status</th>
+                                <th class="px-6 py-3">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody" class="divide-y divide-gray-200">
+
+                        </tbody>
+                    </table>
+
+                    <!-- Pagination Controls -->
+                    <div class="flex justify-between items-center mt-6">
+                        <div class="text-sm text-gray-600">
+                            Showing <span id="startRow">1</span> to <span id="endRow">2</span> of <span
+                                id="totalRows">3</span> entries
+                        </div>
+                        <div class="flex space-x-2">
+                            <button id="prevPage"
+                                class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300">Previous</button>
+                            <button id="nextPage"
+                                class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const tableBody = document.getElementById("tableBody");
+        const prevPageButton = document.getElementById("prevPage");
+        const nextPageButton = document.getElementById("nextPage");
+        const startRow = document.getElementById("startRow");
+        const endRow = document.getElementById("endRow");
+        const totalRows = document.getElementById("totalRows");
+
+        const rowsPerPage = 4; // Number of rows to display per page
+        let currentPage = 1;
+
+        // Sample data (replace this with your actual data)
+        const data = [
+            {
+                name: "John Doe",
+                email: "john.doe@example.com",
+                phone: "+1 234 567 890",
+                orders: "12",
+                status: "Active",
+            },
+            {
+                name: "Jane Smith",
+                email: "jane.smith@example.com",
+                phone: "+1 987 654 321",
+                orders: "8",
+                status: "Pending",
+            },
+            {
+                name: "Alice Johnson",
+                email: "alice.johnson@example.com",
+                phone: "+1 555 123 4567",
+                orders: "5",
+                status: "Inactive",
+            },
+            {
+                name: "Alice Johnson",
+                email: "alice.johnson@example.com",
+                phone: "+1 555 123 4567",
+                orders: "5",
+                status: "Inactive",
+            },
+            {
+                name: "Alice Johnson",
+                email: "alice.johnson@example.com",
+                phone: "+1 555 123 4567",
+                orders: "5",
+                status: "Inactive",
+            },
+            {
+                name: "Alice Johnson",
+                email: "alice.johnson@example.com",
+                phone: "+1 555 123 4567",
+                orders: "5",
+                status: "Inactive",
+            },
+            {
+                name: "Alice Johnson",
+                email: "alice.johnson@example.com",
+                phone: "+1 555 123 4567",
+                orders: "5",
+                status: "Inactive",
+            },
+
+        ];
+
+        // Function to render rows for the current page
+        function renderTable() {
+            tableBody.innerHTML = ""; // Clear existing rows
+            const start = (currentPage - 1) * rowsPerPage;
+            const end = start + rowsPerPage;
+            const paginatedData = data.slice(start, end);
+
+            paginatedData.forEach((row) => {
+                const tr = document.createElement("tr");
+                tr.className = "hover:bg-gray-50 transition duration-200";
+                tr.innerHTML = `
+                <td class="px-6 py-4">${row.name}</td>
+                <td class="px-6 py-4">${row.email}</td>
+                <td class="px-6 py-4">${row.phone}</td>
+                <td class="px-6 py-4">${row.orders}</td>
+                <td class="px-6 py-4">
+                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-sm">${row.status}</span>
+                </td>
+                <td class="px-6 py-4">
+                    <div class="flex space-x-4">
+                        <button class="text-purple-600 hover:text-purple-900">
+                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                        </button>
+                        <button class="text-blue-600 hover:text-blue-900">
+                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                            </svg>
+                        </button>
+                        <button class="text-red-600 hover:text-red-900">
+                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </td>
+            `;
+                tableBody.appendChild(tr);
+            });
+
+            // Update pagination info
+            startRow.textContent = start + 1;
+            endRow.textContent = Math.min(end, data.length);
+            totalRows.textContent = data.length;
+
+            // Enable/disable pagination buttons
+            prevPageButton.disabled = currentPage === 1;
+            nextPageButton.disabled = end >= data.length;
+        }
+
+        // Event listeners for pagination buttons
+        prevPageButton.addEventListener("click", () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderTable();
+            }
+        });
+
+        nextPageButton.addEventListener("click", () => {
+            if (currentPage * rowsPerPage < data.length) {
+                currentPage++;
+                renderTable();
+            }
+        });
+
+        // Initial render
+        renderTable();
+    });
+</script>
+
+</html>

@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-semibold font-Hanken bg-gray-50">
+    <div class="container p-4 mx-auto">
+        <!-- Navigation -->
+        <div class="text-center md:flex md:justify-between md:flex-row">
+            <div class="flex flex-row justify-center space-x-2 mt-4">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-purple-600 to-red-600">
+                </div>
+                <h1 class="ml-2 text-2xl text-gray-600">Logo</h1>
+            </div>
+            <div class="flex justify-center ">
+                <a href="index.html" class="p-4 text-gray-600   hover:text-purple-500">Home</a>
+                <a href="shop.html" class="p-4 text-gray-600 hover:text-purple-500">Shop</a>
+                <a href="blog.html" class="p-4 text-gray-600 hover:text-purple-500">Blog</a>
+                <a href="contact.html" class="p-4 text-gray-600 hover:text-purple-500">Contact</a>
+                <div class="flex items-center space-x-4">
+                    <a href="./cart.html" class="relative p-2 text-gray-600 hover:text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span
+                            class="absolute -top-2 -right-2 bg-red-500 text-white h-5 w-5 rounded-xl flex items-center justify-center text-xs">
+                            6
+                        </span>
+                    </a>
+
+                    <a href="./watchlist.html" class="relative p-2 text-gray-600 hover:text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                        <span
+                            class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                            2
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Cart Header -->
+        <div class="text-center my-20">
+            <h2 class="text-5xl text-gray-600 mb-4">Your Cart</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Review and modify your selected items before checkout</p>
+        </div>
+
+        <!-- Cart Content -->
+        <div class="flex flex-col lg:flex-row gap-8 mb-20">
+            <!-- Cart Items -->
+            <div class="lg:w-2/3">
+                <!-- Cart Item 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md mb-4 flex items-center">
+                    <img src="../../public/images/products/women/product1.jpg" alt="Product"
+                        class="w-24 h-32 object-cover rounded-lg">
+                    <div class="ml-6 flex-grow">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-600">Floral Summer Dress</h3>
+                                <p class="text-gray-500">Size: M | Color: Blue</p>
+                            </div>
+                            <button class="text-gray-400 hover:text-red-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                            <div class="flex items-center space-x-2">
+                                <button
+                                    class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-purple-100">-</button>
+                                <span class="w-8 text-center">1</span>
+                                <button
+                                    class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-purple-100">+</button>
+                            </div>
+                            <p class="text-purple-600 font-bold">$89.99</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Item 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md mb-4 flex items-center">
+                    <img src="../../public/images/products/men/product1.jpg" alt="Product"
+                        class="w-24 h-32 object-cover rounded-lg">
+                    <div class="ml-6 flex-grow">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-600">Men's Casual Shirt</h3>
+                                <p class="text-gray-500">Size: L | Color: White</p>
+                            </div>
+                            <button class="text-gray-400 hover:text-red-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                            <div class="flex items-center space-x-2">
+                                <button
+                                    class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-purple-100">-</button>
+                                <span class="w-8 text-center">2</span>
+                                <button
+                                    class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-purple-100">+</button>
+                            </div>
+                            <p class="text-purple-600 font-bold">$139.98</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="lg:w-1/3">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-600 mb-6">Order Summary</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between text-gray-600">
+                            <span>Subtotal</span>
+                            <span>$229.97</span>
+                        </div>
+                        <div class="flex justify-between text-gray-600">
+                            <span>Shipping</span>
+                            <span>$9.99</span>
+                        </div>
+                        <div class="flex justify-between text-gray-600">
+                            <span>Tax</span>
+                            <span>$23.00</span>
+                        </div>
+                        <div class="pt-4 border-t border-gray-200">
+                            <div class="flex justify-between text-lg font-bold text-gray-600">
+                                <span>Total</span>
+                                <span>$262.96</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Promo Code -->
+                    <div class="mt-6">
+                        <label class="block text-gray-600 mb-2">Promo Code</label>
+                        <div class="flex space-x-2">
+                            <input type="text" placeholder="Enter code"
+                                class="flex-grow px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-purple-500">
+                            <button
+                                class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700">Apply</button>
+                        </div>
+                    </div>
+
+                    <!-- Checkout Button -->
+                    <button
+                        class="w-full mt-6 bg-gradient-to-r from-purple-600 to-red-600 text-white py-4 rounded-full hover:opacity-90 transition-opacity duration-300 flex items-center justify-center space-x-2">
+                        <span>Proceed to Checkout</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="border-t-2 border-gray-300 flex flex-col md:flex-row md:justify-between text-center py-6 text-sm">
+            <div class="mb-5">
+                <a href="#" class="mx-2.5">About</a>
+                <a href="#" class="mx-2.5">Privacy Policy</a>
+                <a href="#" class="mx-2.5">Terms Of Services</a>
+            </div>
+            <p>&copy; Copyright Reserved 2025</p>
+        </div>
+    </div>
+</body>
+
+</html>

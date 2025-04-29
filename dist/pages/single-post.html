@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-semibold font-Hanken">
+    <div class="container p-4 mx-auto">
+        <!-- Navigation -->
+        <div class="text-center md:flex md:justify-between md:flex-row">
+            <div class="flex flex-row justify-center space-x-2 mt-4">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-purple-600 to-red-600">
+                </div>
+                <h1 class="ml-2 text-2xl text-gray-600">Logo</h1>
+            </div>
+            <div class="flex justify-center">
+                <a href="index.html" class="p-4 text-gray-600   hover:text-purple-500">Home</a>
+                <a href="shop.html" class="p-4 text-gray-600 hover:text-purple-500">Shop</a>
+                <a href="blog.html" class="p-4 text-gray-600 hover:text-purple-500">Blog</a>
+                <a href="contact.html" class="p-4 text-gray-600 hover:text-purple-500">Contact</a>
+                <div class="flex items-center space-x-4">
+                    <a href="./cart.html" class="relative p-2 text-gray-600 hover:text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span
+                            class="absolute -top-2 -right-2 bg-red-500 text-white h-5 w-5 rounded-xl flex items-center justify-center text-xs">
+                            6
+                        </span>
+                    </a>
+        
+                    <a href="./watchlist.html" class="relative p-2 text-gray-600 hover:text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                        <span
+                            class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                            2
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Breadcrumb -->
+        <nav class="flex mb-8 text-gray-500 text-sm" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                    <a href="index.html" class="hover:text-purple-600">Home</a>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <svg class="w-3 h-3 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <a href="blog.html" class="hover:text-purple-600">Blog</a>
+                    </div>
+                </li>
+                <li aria-current="page">
+                    <div class="flex items-center">
+                        <svg class="w-3 h-3 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="text-gray-400">The Future of Fashion: AI and Sustainable Materials</span>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+
+        <!-- Article Content -->
+        <div class="max-w-4xl mx-auto">
+            <!-- Article Header -->
+            <div class="mb-8">
+                <div class="flex items-center gap-4 mb-4">
+                    <span
+                        class="px-4 py-1 text-sm text-white bg-gradient-to-r from-red-600 to-pink-500 rounded-full">Fashion
+                        & AI</span>
+                    <span class="text-gray-500">February 11, 2025</span>
+                    <span class="text-gray-500">•</span>
+                    <span class="text-gray-500">8 min read</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">The Future of Fashion: AI and Sustainable
+                    Materials</h1>
+
+                <!-- Author Info -->
+                <div class="flex items-center mb-8">
+                    <img src="../../public/images/user/user-1.jpg" alt="Author"
+                        class="w-12 h-12 rounded-full border-2 border-purple-500">
+                    <div class="ml-4">
+                        <p class="text-gray-800 font-medium">Alex Thompson</p>
+                        <p class="text-gray-500 text-sm">Senior Fashion Editor</p>
+                    </div>
+                    <div class="ml-auto flex gap-4">
+                        <button class="text-gray-500 hover:text-purple-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                            </svg>
+                        </button>
+                        <button class="text-gray-500 hover:text-purple-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Image -->
+            <div class="mb-12">
+                <img src="../../public/images/products/men/product2.jpg" alt="Featured image"
+                    class="w-full h-[400px] object-cover rounded-2xl">
+            </div>
+
+            <!-- Article Body -->
+            <div class="prose prose-lg max-w-none">
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Artificial Intelligence is revolutionizing every industry it touches, and fashion is no exception.
+                    From
+                    design conception to sustainable material selection, AI is transforming how we create, consume, and
+                    think about clothing.
+                </p>
+
+                <h2 class="text-2xl font-bold text-gray-800 mt-12 mb-6">The Role of AI in Fashion Design</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    AI algorithms are now capable of analyzing fashion trends from social media, runway shows, and
+                    street
+                    style photos to predict upcoming trends with remarkable accuracy. This technology helps designers
+                    stay
+                    ahead of the curve while reducing the risk of producing items that won't resonate with consumers.
+                </p>
+
+                <div class="bg-purple-50 border-l-4 border-purple-500 p-6 my-8 rounded-r-lg">
+                    <p class="text-purple-800 font-medium">
+                        "AI isn't replacing creativity; it's enhancing it. It's giving designers tools to experiment
+                        with
+                        possibilities they might never have considered."
+                    </p>
+                    <p class="text-purple-600 mt-2">- Dr. Sarah Chen, Fashion Technology Researcher</p>
+                </div>
+
+                <h2 class="text-2xl font-bold text-gray-800 mt-12 mb-6">Sustainable Materials: The Future of Fashion
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    As consciousness about environmental impact grows, sustainable materials are becoming increasingly
+                    central to fashion's future. AI is helping identify and develop new sustainable materials that don't
+                    compromise on quality or style.
+
+
+                    As consciousness about environmental impact grows, sustainable materials are becoming increasingly
+                    central to fashion's future. AI is helping identify and develop new sustainable materials that don't
+                    compromise on quality or style.
+
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    As consciousness about environmental impact grows, sustainable materials are becoming increasingly
+                    central to fashion's future. AI is helping identify and develop new sustainable materials that don't
+                    compromise on quality or style.
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    As consciousness about environmental impact grows, sustainable materials are becoming increasingly
+                    central to fashion's future. AI is helping identify and develop new sustainable materials that don't
+                    compromise on quality or style.As consciousness about environmental impact grows, sustainable
+                    materials are becoming increasingly
+                    central to fashion's future. AI is helping identify and develop new sustainable materials that don't
+                    compromise on quality or style.
+                </p>
+            </div>
+
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2 my-12">
+                <a href="#"
+                    class="px-4 py-2 bg-gray-100 text-gray-600 rounded-full hover:bg-purple-100 hover:text-purple-600">#FashionTech</a>
+                <a href="#"
+                    class="px-4 py-2 bg-gray-100 text-gray-600 rounded-full hover:bg-purple-100 hover:text-purple-600">#Sustainability</a>
+                <a href="#"
+                    class="px-4 py-2 bg-gray-100 text-gray-600 rounded-full hover:bg-purple-100 hover:text-purple-600">#ArtificialIntelligence</a>
+                <a href="#"
+                    class="px-4 py-2 bg-gray-100 text-gray-600 rounded-full hover:bg-purple-100 hover:text-purple-600">#FutureFashion</a>
+            </div>
+
+            <!-- Author Bio -->
+            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 my-12">
+                <div class="flex items-start gap-6">
+                    <img src="../../public/images/user/user-3.jpg" alt="Author"
+                        class="w-20 h-20 rounded-full border-2 border-purple-500">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Alex Thompson</h3>
+                        <p class="text-gray-600 mb-4">Alex Thompson is a Senior Fashion Editor with over a decade of
+                            experience in fashion journalism. She specializes in the intersection of technology and
+                            fashion,
+                            with a particular focus on sustainable practices.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-purple-600 hover:text-purple-700">Twitter</a>
+                            <a href="#" class="text-purple-600 hover:text-purple-700">LinkedIn</a>
+                            <a href="#" class="text-purple-600 hover:text-purple-700">Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="my-12">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">Related Articles</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Related Post 1 -->
+                    <div
+                        class="rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white overflow-hidden">
+                        <img src="../../public/images/blog/post-2.png" alt="Related post"
+                            class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-800 mb-2 hover:text-purple-600">Sustainable Fashion:
+                                A
+                                Complete Guide</h4>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Learn everything you need to know about
+                                sustainable
+                                fashion and how to make environmentally conscious choices.</p>
+                            <a href="#" class="text-purple-600 hover:text-purple-700 font-medium">Read More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Related Post 2 -->
+                    <div
+                        class="rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white overflow-hidden">
+                        <img src="../../public/images/blog/post-1.png" alt="Related post"
+                            class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-800 mb-2 hover:text-purple-600">The Rise of Smart
+                                Fabrics
+                            </h4>
+                            <p class="text-gray-600 mb-4 line-clamp-2">Discover how technology is being integrated into
+                                fabric design to create innovative and functional clothing.</p>
+                            <a href="#" class="text-purple-600 hover:text-purple-700 font-medium">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments Section -->
+            <div class="my-12">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">Comments (3)</h3>
+
+                <!-- Comment Form -->
+                <div class="bg-white p-6 rounded-xl shadow-lg mb-8">
+                    <h4 class="text-lg font-bold text-gray-800 mb-4">Leave a Comment</h4>
+                    <form>
+                        <textarea
+                            class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-purple-500 mb-4"
+                            rows="4" placeholder="Write your comment here..."></textarea>
+                        <button type="submit"
+                            class="px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700">Post
+                            Comment</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div
+                class="border-t-2 border-gray-300 flex flex-col md:flex-row md:justify-between text-center py-6 text-sm">
+                <div class="mb-5">
+                    <a href="#" class="mx-2.5">About</a>
+                    <a href="#" class="mx-2.5">Privacy Policy</a>
+                    <a href="#" class="mx-2.5">Terms Of Services</a>
+                </div>
+                <p>&copy; Copyright Reserved 2025</p>
+            </div>
+        </div>
+</body>
+
+</html>

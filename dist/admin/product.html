@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Dashboard</title>
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- icon likns  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+
+
+    <style>
+        body {
+            font-family: 'Hanken Grotesk', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-Hanken">
+    <div class="flex">
+        <!-- Sidebar -->
+        <div class="w-64 bg-gray-900 p-6 h-screen text-white">
+
+            <div class="flex items-center space-x-2 mb-8">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-purple-600 to-red-600"></div>
+                <h1 class="text-xl font-bold">Dashboard</h1>
+            </div>
+            <nav>
+                <a href="index.html"
+                    class="flex items-center py-4 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                    </svg>
+                    Overview
+                </a>
+                <a href="order.html"
+                    class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                    Orders
+                </a>
+                <a href="product.html"
+                    class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                    </svg>
+                    Products
+                </a>
+                <a href="customer.html"
+                    class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    Customers
+                </a>
+                <a href="analytics.html"
+                    class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                    Analytics
+                </a>
+                <a href="setting.html"
+                    class="flex items-center py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    Settings
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-8">
+            <!-- Header -->
+            <div class="flex justify-between items-center mb-8">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800">Product Hub</h2>
+                    <p class="text-gray-500">Manage your product catalog efficiently</p>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <button
+                        class="bg-white px-4 py-2 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 4v16m8-8H4" />
+                        </svg>
+                        New Product
+                    </button>
+                    <button
+                        class="bg-purple-600 px-4 py-2 rounded-lg text-white shadow-sm hover:shadow-md transition-all duration-200 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                        Import Products
+                    </button>
+                </div>
+            </div>
+
+            <!-- Interactive Dashboard -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-8">
+                <!-- Stats Cards -->
+                <div class="bg-gradient-to-br from-purple-500 to-indigo-600 p-6 rounded-lg shadow-lg text-white">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-purple-200">Total Products</p>
+                            <h3 class="text-3xl font-bold mt-1">2,547</h3>
+                        </div>
+                        <span class="bg-white/20 p-2 rounded-lg">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="mt-4 flex items-center text-purple-200">
+                        <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                        <span>+12.5% this month</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-amber-500 to-orange-600 p-6 rounded-lg shadow-lg text-white">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-amber-200">Low Stock</p>
+                            <h3 class="text-3xl font-bold mt-1">28</h3>
+                        </div>
+                        <span class="bg-white/20 p-2 rounded-lg">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="mt-4 flex items-center text-amber-200">
+                        <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>Needs attention</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-emerald-500 to-teal-600 p-6 rounded-lg shadow-lg text-white">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-emerald-200">Revenue</p>
+                            <h3 class="text-3xl font-bold mt-1">$45.2K</h3>
+                        </div>
+                        <span class="bg-white/20 p-2 rounded-lg">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="mt-4 flex items-center text-emerald-200">
+                        <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                        <span>+8.1% this week</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-rose-500 to-pink-600 p-6 rounded-lg shadow-lg text-white">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-rose-200">Out of Stock</p>
+                            <h3 class="text-3xl font-bold mt-1">15</h3>
+                        </div>
+                        <span class="bg-white/20 p-2 rounded-lg">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path
+                                    d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="mt-4 flex items-center text-rose-200">
+                        <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path
+                                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                        </svg>
+                        <span>Critical alert</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced Search and Filters -->
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+                <div class="flex flex-wrap gap-4">
+                    <div class="flex-1">
+                        <div class="relative">
+                            <input type="text" placeholder="Search products by name, SKU, or category..."
+                                class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <svg class="w-5 h-5 text-gray-400 absolute left-3 top-2.5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <select
+                        class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        <option>All Categories</option>
+                        <option>Electronics</option>
+                        <option>Fashion</option>
+                        <option>Home & Living</option>
+                    </select>
+                    <select
+                        class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        <option>Price Range</option>
+                        <option>Under $50</option>
+                        <option>$50 - $100</option>
+                        <option>$100 - $200</option>
+                        <option>$200+</option>
+                    </select>
+                    <select
+                        class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        <option>Stock Status</option>
+                        <option>In Stock</option>
+                        <option>Low Stock</option>
+                        <option>Out of Stock</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Product Table -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Product List</h3>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead class="bg-gray-50 text-gray-600">
+                            <tr>
+                                <th class="px-6 py-3">Product Name</th>
+                                <th class="px-6 py-3">Category</th>
+                                <th class="px-6 py-3">Price</th>
+                                <th class="px-6 py-3">Stock</th>
+                                <th class="px-6 py-3">Status</th>
+                                <th class="px-6 py-3">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <!-- Product Row 1 -->
+                            <tr class="hover:bg-gray-50 transition duration-200">
+                                <td class="px-6 py-4">Wireless Headphones</td>
+                                <td class="px-6 py-4">Electronics</td>
+                                <td class="px-6 py-4">$99.99</td>
+                                <td class="px-6 py-4">45</td>
+                                <td class="px-6 py-4">
+                                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-sm">In
+                                        Stock</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex space-x-4">
+                                        <button class="text-purple-600 hover:text-purple-900">
+                                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                <path
+                                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                            </svg>
+                                        </button>
+                                        <button class="text-gray-500 hover:text-gray-900">
+                                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path
+                                                    d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                            </svg>
+                                        </button>
+                                        <button class="text-red-500 hover:text-red-900">
+                                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path
+                                                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Product Row 2 -->
+                            <tr class="hover:bg-gray-50 transition duration-200">
+                                <td class="px-6 py-4">Smart Watch</td>
+                                <td class="px-6 py-4">Electronics</td>
+                                <td class="px-6 py-4">$199.99</td>
+                                <td class="px-6 py-4">5</td>
+                                <td class="px-6 py-4">
+                                    <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-sm">Low
+                                        Stock</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex space-x-4">
+                                        <button class="text-purple-600 hover:text-purple-900">
+                                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                <path
+                                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                            </svg>
+                                        </button>
+                                        <button class="text-gray-500 hover:text-gray-900">
+                                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path
+                                                    d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                            </svg>
+                                        </button>
+                                        <button class="text-red-500 hover:text-red-900">
+                                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path
+                                                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Product Row 3 -->
+                            <tr class="hover:bg-gray-50 transition duration-200">
+                                <td class="px-6 py-4">Bluetooth Speaker</td>
+                                <td class="px-6 py-4">Electronics</td>
+                                <td class="px-6 py-4">$49.99</td>
+                                <td class="px-6 py-4">0</td>
+                                <td class="px-6 py-4">
+                                    <span class="bg-red-100 text-red-800 px-2 py-1 rounded-full text-sm">Out of
+                                        Stock</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex space-x-4">
+                                        <button class="text-purple-600 hover:text-purple-900">
+                                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                <path
+                                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                            </svg>
+                                        </button>
+                                        <button class="text-gray-500 hover:text-gray-900">
+                                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path
+                                                    d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                            </svg>
+                                        </button>
+                                        <button class="text-red-500 hover:text-red-900">
+                                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path
+                                                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lucide Icons Script -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+
+</html>

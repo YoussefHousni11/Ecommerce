@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-semibold font-Hanken bg-gray-50">
+    <div class="container p-4 mx-auto">
+        <!-- Navigation -->
+        <div class="text-center md:flex md:justify-between md:flex-row">
+            <div class="flex flex-row justify-center space-x-2 mt-4">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-purple-600 to-red-600">
+                </div>
+                <h1 class="ml-2 text-2xl text-gray-600">Logo</h1>
+            </div>
+            <div class="flex justify-center">
+                <a href="index.html" class="p-4 text-gray-600   hover:text-purple-500">Home</a>
+                <a href="shop.html" class="p-4 text-gray-600 hover:text-purple-500">Shop</a>
+                <a href="blog.html" class="p-4 text-gray-600 hover:text-purple-500">Blog</a>
+                <a href="contact.html" class="p-4 text-gray-600 hover:text-purple-500">Contact</a>
+                <div class="flex items-center space-x-4">
+                    <a href="./cart.html" class="relative p-2 text-gray-600 hover:text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span
+                            class="absolute -top-2 -right-2 bg-red-500 text-white h-5 w-5 rounded-xl flex items-center justify-center text-xs">
+                            6
+                        </span>
+                    </a>
+
+                    <a href="./watchlist.html" class="relative p-2 text-gray-600 hover:text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                        <span
+                            class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                            2
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="flex    mt-12 text-gray-500 text-sm" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                    <a href="index.html" class="hover:text-purple-600">Home</a>
+                </li>
+                <li aria-current="page">
+                    <div class="flex items-center">
+                        <svg class="w-3 h-3 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="text-gray-400">Watchlist</span>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+
+
+        <!-- Watchlist Header -->
+        <div class="text-center my-10">
+
+            <h2 class="text-5xl text-gray-600 mb-4">My Watchlist</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Review and modify your selected items before checkout</p>
+        </div>
+
+        <div class="text-center md:flex md:justify-between md:flex-row items-center mb-8">
+        </div>
+
+
+        <div class="max-w-4xl mx-auto mb-32">
+            <div class="bg-white p-8 rounded-2xl shadow-lg">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead>
+                        <tr>
+                            <th scope="col"
+                                class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Product</th>
+                            <th scope="col"
+                                class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Price</th>
+                            <th scope="col"
+                                class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-100 hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 h-10 w-10">
+                                        <img class="h-10 w-10 rounded-md"
+                                            src="../../public/images/products/women/product2.jpg" alt="Product Image">
+                                    </div>
+                                    <div class="ml-4">
+                                        <div class="text-sm font-medium text-gray-900">Product Name 1</div>
+                                        <div class="text-sm text-gray-500">Description or SKU</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$99.99</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium flex ">
+                                <a href="#" class="text-purple-600 hover:text-purple-700 mr-4">Move to Cart</a>
+                                <a href="#" class="text-red-600 hover:text-red-700">Remove</a>
+                            </td>
+                        </tr>
+
+                        <tr class="border-b border-gray-100 hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 h-10 w-10">
+                                        <img class="h-10 w-10 rounded-md"
+                                            src="../../public/images/products/men/product1.jpg" alt="Product Image">
+                                    </div>
+                                    <div class="ml-4">
+                                        <div class="text-sm font-medium text-gray-900">Product Name 2</div>
+                                        <div class="text-sm text-gray-500">Description or SKU</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$49.99</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium flex">
+                                <a href="#" class="text-purple-600 hover:text-purple-700 mr-4 ">Move to Cart</a>
+                                <a href="#" class="text-red-600 hover:text-red-700">Remove</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="text-center mt-8 text-gray-500" id="empty-watchlist-message">
+                    Your watchlist is currently empty.
+                </div>
+
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="border-t-2 border-gray-300 flex flex-col md:flex-row md:justify-between text-center py-6 text-sm">
+            <div class="mb-5">
+                <a href="#" class="mx-2.5">About</a>
+                <a href="#" class="mx-2.5">Privacy Policy</a>
+                <a href="#" class="mx-2.5">Terms Of Services</a>
+            </div>
+            <p>&copy; Copyright Reserved 2025</p>
+        </div>
+    </div>
+</body>
+
+</html>
